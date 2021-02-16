@@ -12,12 +12,10 @@ logging.basicConfig(level=logging.INFO)
 # которые мы записали в прошлом пункте.
 
 cities = {
-    'москва': ['1540737/daa6e420d33102bf6947',
-               '213044/7df73ae4cc715175059e'],
-    'нью-йорк': ['1652229/728d5c86707054d4745f',
-                 '1030494/aca7ed7acefde2606bdc'],
-    'париж': ["1652229/f77136c2364eb90a3ea8",
-              '3450494/aca7ed7acefde22341bdc']
+    'москва': ['1030494/bc40bc363e3e30f86137',
+               '1030494/5a5ec42cff7eaddd25e2'],
+    'нью-йорк': ['997614/a9703d5c65f13d7d34a6'],
+    'париж': ["1652229/d20abf71675ce4cef9db"]
 }
 
 # создаем словарь, где для каждого пользователя
@@ -25,7 +23,7 @@ cities = {
 sessionStorage = {}
 
 
-@app.route('/post', methods=['POST'])
+@app.route('/', methods=['POST'])
 def main():
     logging.info(f'Request: {request.json!r}')
     response = {
