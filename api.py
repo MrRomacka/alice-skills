@@ -69,7 +69,7 @@ def handle_dialog(req, res):
         'хорошо',
     ]:
         # Пользователь согласился, прощаемся.
-        res['response']['text'] = 'Скайрим можно найти на Яндекс.Маркете!'
+        res['response']['text'] = 'Скайрим можно найти в Стиме!'
         return
 
     # Если нет, то убеждаем его купить слона!
@@ -97,7 +97,7 @@ def get_suggests(user_id):
     if len(suggests) < 2:
         suggests.append({
             "title": "Ладно",
-            "url": "https://market.yandex.ru/search?text=TESV",
+            "url": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
             "hide": True
         })
 
